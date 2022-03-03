@@ -1,0 +1,669 @@
+object FrmAttivita: TFrmAttivita
+  Left = 1188
+  Top = 229
+  BorderStyle = bsDialog
+  Caption = ' Nuova Attivit'#224
+  ClientHeight = 394
+  ClientWidth = 486
+  Color = clBtnFace
+  Constraints.MinHeight = 32
+  Constraints.MinWidth = 130
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Verdana'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  Scaled = False
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object AdvPanel1: TAdvPanel
+    Left = 0
+    Top = 0
+    Width = 486
+    Height = 394
+    Align = alClient
+    BevelOuter = bvNone
+    Color = 16445929
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = 7485192
+    Font.Height = -11
+    Font.Name = 'Verdana'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    UseDockManager = True
+    Version = '2.4.2.0'
+    AutoHideChildren = False
+    BorderColor = 16765615
+    Caption.Color = 16773091
+    Caption.ColorTo = 16765615
+    Caption.Font.Charset = DEFAULT_CHARSET
+    Caption.Font.Color = clBlack
+    Caption.Font.Height = -11
+    Caption.Font.Name = 'MS Sans Serif'
+    Caption.Font.Style = []
+    Caption.GradientDirection = gdVertical
+    Caption.Indent = 2
+    Caption.ShadeLight = 255
+    CollapsColor = clNone
+    CollapsDelay = 0
+    ColorTo = 15587527
+    ColorMirror = 15587527
+    ColorMirrorTo = 16773863
+    DoubleBuffered = True
+    ShadowColor = clBlack
+    ShadowOffset = 0
+    StatusBar.BorderColor = 16765615
+    StatusBar.BorderStyle = bsSingle
+    StatusBar.Font.Charset = DEFAULT_CHARSET
+    StatusBar.Font.Color = 7485192
+    StatusBar.Font.Height = -11
+    StatusBar.Font.Name = 'Tahoma'
+    StatusBar.Font.Style = []
+    StatusBar.Color = 16245715
+    StatusBar.ColorTo = 16109747
+    StatusBar.GradientDirection = gdVertical
+    Styler = FrmMain.AdvPanelStyler1
+    Text = ''
+    FullHeight = 200
+    object Label1: TLabel
+      Left = 13
+      Top = 32
+      Width = 27
+      Height = 13
+      Caption = 'Data'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label5: TLabel
+      Left = 13
+      Top = 219
+      Width = 131
+      Height = 13
+      Caption = 'Riferimento Preventivo'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label6: TLabel
+      Left = 13
+      Top = 262
+      Width = 109
+      Height = 13
+      Caption = 'Riferimento Fattura'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label7: TLabel
+      Left = 129
+      Top = 32
+      Width = 48
+      Height = 13
+      Caption = 'Paziente'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label30: TLabel
+      Left = 13
+      Top = 79
+      Width = 146
+      Height = 13
+      Caption = 'Tipo Operazione / Attivit'#224
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label2: TLabel
+      Left = 13
+      Top = 126
+      Width = 189
+      Height = 13
+      Caption = 'Descrizione Attivit'#224' / Annotazioni'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object Label31: TLabel
+      Left = 373
+      Top = 79
+      Width = 46
+      Height = 13
+      Caption = 'Importo'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+      Transparent = True
+    end
+    object EdDataAttivita: TcxDBDateEdit
+      Left = 10
+      Top = 47
+      AutoSize = False
+      DataBinding.DataField = 'Data'
+      DataBinding.DataSource = DsAttivita
+      ParentFont = False
+      Properties.SaveTime = False
+      Properties.ShowTime = False
+      Style.BorderColor = 13283227
+      Style.BorderStyle = ebsSingle
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = 3487029
+      Style.Font.Height = -11
+      Style.Font.Name = 'Verdana'
+      Style.Font.Style = [fsBold]
+      Style.HotTrack = False
+      Style.LookAndFeel.Kind = lfFlat
+      Style.LookAndFeel.NativeStyle = False
+      Style.LookAndFeel.SkinName = 'Office2010Blue'
+      Style.ButtonStyle = btsDefault
+      Style.IsFontAssigned = True
+      StyleDisabled.LookAndFeel.Kind = lfFlat
+      StyleDisabled.LookAndFeel.NativeStyle = False
+      StyleDisabled.LookAndFeel.SkinName = 'Office2010Blue'
+      StyleFocused.LookAndFeel.Kind = lfFlat
+      StyleFocused.LookAndFeel.NativeStyle = False
+      StyleFocused.LookAndFeel.SkinName = 'Office2010Blue'
+      StyleHot.LookAndFeel.Kind = lfFlat
+      StyleHot.LookAndFeel.NativeStyle = False
+      StyleHot.LookAndFeel.SkinName = 'Office2010Blue'
+      TabOrder = 0
+      Height = 22
+      Width = 115
+    end
+    object suiButton1: TAdvGlowButton
+      Left = 156
+      Top = 325
+      Width = 83
+      Height = 25
+      Caption = 'CONFERMA'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 7485192
+      Font.Height = -11
+      Font.Name = 'Verdana'
+      Font.Style = [fsBold]
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      TabOrder = 7
+      OnClick = suiButton1Click
+      Appearance.BorderColor = 14727579
+      Appearance.BorderColorHot = 10079963
+      Appearance.BorderColorDown = 4548219
+      Appearance.Color = 15653832
+      Appearance.ColorTo = 16178633
+      Appearance.ColorChecked = 7915518
+      Appearance.ColorCheckedTo = 11918331
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = 7778289
+      Appearance.ColorDownTo = 4296947
+      Appearance.ColorHot = 15465983
+      Appearance.ColorHotTo = 11332863
+      Appearance.ColorMirror = 15586496
+      Appearance.ColorMirrorTo = 16245200
+      Appearance.ColorMirrorHot = 5888767
+      Appearance.ColorMirrorHotTo = 10807807
+      Appearance.ColorMirrorDown = 946929
+      Appearance.ColorMirrorDownTo = 5021693
+      Appearance.ColorMirrorChecked = 10480637
+      Appearance.ColorMirrorCheckedTo = 5682430
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+    end
+    object suiButton2: TAdvGlowButton
+      Left = 254
+      Top = 325
+      Width = 83
+      Height = 25
+      Caption = 'ANNULLA'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 7485192
+      Font.Height = -11
+      Font.Name = 'Verdana'
+      Font.Style = [fsBold]
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      TabOrder = 8
+      OnClick = suiButton2Click
+      Appearance.BorderColor = 14727579
+      Appearance.BorderColorHot = 10079963
+      Appearance.BorderColorDown = 4548219
+      Appearance.Color = 15653832
+      Appearance.ColorTo = 16178633
+      Appearance.ColorChecked = 7915518
+      Appearance.ColorCheckedTo = 11918331
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = 7778289
+      Appearance.ColorDownTo = 4296947
+      Appearance.ColorHot = 15465983
+      Appearance.ColorHotTo = 11332863
+      Appearance.ColorMirror = 15586496
+      Appearance.ColorMirrorTo = 16245200
+      Appearance.ColorMirrorHot = 5888767
+      Appearance.ColorMirrorHotTo = 10807807
+      Appearance.ColorMirrorDown = 946929
+      Appearance.ColorMirrorDownTo = 5021693
+      Appearance.ColorMirrorChecked = 10480637
+      Appearance.ColorMirrorCheckedTo = 5682430
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+    end
+    object EdTipoOperazione: TcxDBComboBox
+      Left = 10
+      Top = 97
+      AutoSize = False
+      DataBinding.DataField = 'TipoOperazione'
+      DataBinding.DataSource = DsAttivita
+      ParentFont = False
+      Properties.CharCase = ecUpperCase
+      Properties.Sorted = True
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = 3487029
+      Style.Font.Height = -11
+      Style.Font.Name = 'Verdana'
+      Style.Font.Style = [fsBold]
+      Style.LookAndFeel.NativeStyle = False
+      Style.LookAndFeel.SkinName = 'Office2010Blue'
+      Style.IsFontAssigned = True
+      StyleDisabled.LookAndFeel.NativeStyle = False
+      StyleDisabled.LookAndFeel.SkinName = 'Office2010Blue'
+      StyleFocused.LookAndFeel.NativeStyle = False
+      StyleFocused.LookAndFeel.SkinName = 'Office2010Blue'
+      StyleHot.LookAndFeel.NativeStyle = False
+      StyleHot.LookAndFeel.SkinName = 'Office2010Blue'
+      TabOrder = 2
+      Height = 22
+      Width = 350
+    end
+    object cxDBLookupComboBox1: TcxDBLookupComboBox
+      Left = 130
+      Top = 48
+      DataBinding.DataField = 'LkpPaziente'
+      DataBinding.DataSource = DsAttivita
+      ParentFont = False
+      Properties.KeyFieldNames = 'Cod_Paziente'
+      Properties.ListColumns = <
+        item
+          FieldName = 'CalcNominativo'
+        end
+        item
+          FieldName = 'Descrizione'
+        end>
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = 3487029
+      Style.Font.Height = -11
+      Style.Font.Name = 'Verdana'
+      Style.Font.Style = [fsBold]
+      Style.LookAndFeel.NativeStyle = False
+      Style.LookAndFeel.SkinName = 'Office2010Blue'
+      Style.IsFontAssigned = True
+      StyleDisabled.LookAndFeel.NativeStyle = False
+      StyleDisabled.LookAndFeel.SkinName = 'Office2010Blue'
+      StyleFocused.LookAndFeel.NativeStyle = False
+      StyleFocused.LookAndFeel.SkinName = 'Office2010Blue'
+      StyleHot.LookAndFeel.NativeStyle = False
+      StyleHot.LookAndFeel.SkinName = 'Office2010Blue'
+      TabOrder = 1
+      Width = 336
+    end
+    object cxDBTextEdit6: TcxDBTextEdit
+      Left = 367
+      Top = 94
+      AutoSize = False
+      DataBinding.DataField = 'Importo'
+      DataBinding.DataSource = DsAttivita
+      ParentFont = False
+      Properties.CharCase = ecUpperCase
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = 3487029
+      Style.Font.Height = -11
+      Style.Font.Name = 'Verdana'
+      Style.Font.Style = [fsBold]
+      Style.LookAndFeel.NativeStyle = False
+      Style.LookAndFeel.SkinName = 'Office2010Blue'
+      Style.IsFontAssigned = True
+      StyleDisabled.LookAndFeel.NativeStyle = False
+      StyleDisabled.LookAndFeel.SkinName = 'Office2010Blue'
+      StyleFocused.LookAndFeel.NativeStyle = False
+      StyleFocused.LookAndFeel.SkinName = 'Office2010Blue'
+      StyleHot.LookAndFeel.NativeStyle = False
+      StyleHot.LookAndFeel.SkinName = 'Office2010Blue'
+      TabOrder = 3
+      Height = 22
+      Width = 101
+    end
+    object cxDBMemo1: TcxDBMemo
+      Left = 10
+      Top = 146
+      DataBinding.DataField = 'Dettaglio'
+      DataBinding.DataSource = DsAttivita
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = 3487029
+      Style.Font.Height = -11
+      Style.Font.Name = 'Verdana'
+      Style.Font.Style = [fsBold]
+      Style.LookAndFeel.NativeStyle = False
+      Style.LookAndFeel.SkinName = 'Office2010Blue'
+      Style.TextColor = 3487029
+      Style.TextStyle = [fsBold]
+      Style.IsFontAssigned = True
+      StyleDisabled.LookAndFeel.NativeStyle = False
+      StyleDisabled.LookAndFeel.SkinName = 'Office2010Blue'
+      StyleFocused.LookAndFeel.NativeStyle = False
+      StyleFocused.LookAndFeel.SkinName = 'Office2010Blue'
+      StyleHot.LookAndFeel.NativeStyle = False
+      StyleHot.LookAndFeel.SkinName = 'Office2010Blue'
+      TabOrder = 4
+      Height = 58
+      Width = 457
+    end
+    object cxDBTextEdit1: TcxDBTextEdit
+      Left = 10
+      Top = 234
+      AutoSize = False
+      DataBinding.DataField = 'RifPreventivo'
+      DataBinding.DataSource = DsAttivita
+      ParentFont = False
+      Properties.CharCase = ecUpperCase
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = 3487029
+      Style.Font.Height = -11
+      Style.Font.Name = 'Verdana'
+      Style.Font.Style = [fsBold]
+      Style.LookAndFeel.NativeStyle = False
+      Style.LookAndFeel.SkinName = 'Office2010Blue'
+      Style.IsFontAssigned = True
+      StyleDisabled.LookAndFeel.NativeStyle = False
+      StyleDisabled.LookAndFeel.SkinName = 'Office2010Blue'
+      StyleFocused.LookAndFeel.NativeStyle = False
+      StyleFocused.LookAndFeel.SkinName = 'Office2010Blue'
+      StyleHot.LookAndFeel.NativeStyle = False
+      StyleHot.LookAndFeel.SkinName = 'Office2010Blue'
+      TabOrder = 5
+      Height = 22
+      Width = 455
+    end
+    object cxDBTextEdit2: TcxDBTextEdit
+      Left = 10
+      Top = 281
+      AutoSize = False
+      DataBinding.DataField = 'RifFattura'
+      DataBinding.DataSource = DsAttivita
+      ParentFont = False
+      Properties.CharCase = ecUpperCase
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = 3487029
+      Style.Font.Height = -11
+      Style.Font.Name = 'Verdana'
+      Style.Font.Style = [fsBold]
+      Style.LookAndFeel.NativeStyle = False
+      Style.LookAndFeel.SkinName = 'Office2010Blue'
+      Style.IsFontAssigned = True
+      StyleDisabled.LookAndFeel.NativeStyle = False
+      StyleDisabled.LookAndFeel.SkinName = 'Office2010Blue'
+      StyleFocused.LookAndFeel.NativeStyle = False
+      StyleFocused.LookAndFeel.SkinName = 'Office2010Blue'
+      StyleHot.LookAndFeel.NativeStyle = False
+      StyleHot.LookAndFeel.SkinName = 'Office2010Blue'
+      TabOrder = 6
+      Height = 22
+      Width = 453
+    end
+  end
+  object Attivita: TMyTable
+    TableName = 'attivita'
+    MasterFields = 'Cod_Paziente'
+    Connection = DM.MyConnection1
+    Active = True
+    Options.FieldOrigins = foNone
+    IndexFieldNames = 'Cod_Paziente;Data'
+    Left = 400
+    Top = 144
+    object AttivitaId_Attivita: TAutoIncField
+      AutoGenerateValue = arAutoInc
+      FieldName = 'Id_Attivita'
+      Origin = 'Attivita.Id_Attivita'
+      ReadOnly = True
+    end
+    object AttivitaCod_Paziente: TFloatField
+      FieldName = 'Cod_Paziente'
+      Origin = 'Attivita.Cod_Paziente'
+    end
+    object AttivitaData: TDateField
+      FieldName = 'Data'
+      Origin = 'Attivita.Data'
+    end
+    object AttivitaTipoOperazione: TStringField
+      FieldName = 'TipoOperazione'
+      Origin = 'Attivita.TipoOperazione'
+      Size = 100
+    end
+    object AttivitaImporto: TCurrencyField
+      FieldName = 'Importo'
+      Origin = 'Attivita.Importo'
+    end
+    object AttivitaDettaglio: TMemoField
+      FieldName = 'Dettaglio'
+      Origin = 'Attivita.Dettaglio'
+      BlobType = ftMemo
+    end
+    object AttivitaRifPreventivo: TStringField
+      FieldName = 'RifPreventivo'
+      Origin = 'Attivita.RifPreventivo'
+      Size = 255
+    end
+    object AttivitaRifFattura: TStringField
+      FieldName = 'RifFattura'
+      Origin = 'Attivita.RifFattura'
+      Size = 255
+    end
+    object AttivitaLkpPaziente: TStringField
+      FieldKind = fkLookup
+      FieldName = 'LkpPaziente'
+      LookupDataSet = Pazienti
+      LookupKeyFields = 'Cod_Paziente'
+      LookupResultField = 'CalcNominativo'
+      KeyFields = 'Cod_Paziente'
+      Size = 150
+      Lookup = True
+    end
+  end
+  object DsAttivita: TDataSource
+    DataSet = Attivita
+    Left = 368
+    Top = 144
+  end
+  object Pazienti: TMyTable
+    TableName = 'pazienti'
+    Connection = DM.MyConnection1
+    Active = True
+    OnCalcFields = PazientiCalcFields
+    Options.FieldOrigins = foNone
+    Left = 400
+    Top = 176
+    object PazientiCod_Paziente: TAutoIncField
+      AutoGenerateValue = arAutoInc
+      FieldName = 'Cod_Paziente'
+      Origin = 'Pazienti.Cod_Paziente'
+      ReadOnly = True
+      DisplayFormat = '00#'
+    end
+    object PazientiCognome: TStringField
+      FieldName = 'Cognome'
+      Origin = 'Pazienti.Cognome'
+      Size = 150
+    end
+    object PazientiNome: TStringField
+      FieldName = 'Nome'
+      Origin = 'Pazienti.Nome'
+      Size = 150
+    end
+    object PazientiIndirizzo: TStringField
+      FieldName = 'Indirizzo'
+      Origin = 'Pazienti.Indirizzo'
+      Size = 200
+    end
+    object PazientiCap: TStringField
+      FieldName = 'Cap'
+      Origin = 'Pazienti.Cap'
+      Size = 5
+    end
+    object PazientiCitta: TStringField
+      FieldName = 'Citta'
+      Origin = 'Pazienti.Citta'
+      Size = 100
+    end
+    object PazientiProv: TStringField
+      FieldName = 'Prov'
+      Origin = 'Pazienti.Prov'
+      Size = 3
+    end
+    object PazientiStato: TStringField
+      FieldName = 'Stato'
+      Origin = 'Pazienti.Stato'
+      Size = 50
+    end
+    object PazientiSesso: TStringField
+      FieldName = 'Sesso'
+      Origin = 'Pazienti.Sesso'
+      Size = 1
+    end
+    object PazientiDataNascita: TDateField
+      FieldName = 'DataNascita'
+      Origin = 'Pazienti.DataNascita'
+      DisplayFormat = 'dd/mm/yyyy'
+    end
+    object PazientiCittaNascita: TStringField
+      FieldName = 'CittaNascita'
+      Origin = 'Pazienti.CittaNascita'
+      Size = 100
+    end
+    object PazientiCodiceFiscale: TStringField
+      FieldName = 'CodiceFiscale'
+      Origin = 'Pazienti.CodiceFiscale'
+      Size = 16
+    end
+    object PazientiTelefono: TStringField
+      FieldName = 'Telefono'
+      Origin = 'Pazienti.Telefono'
+      Size = 15
+    end
+    object PazientiCellulare: TStringField
+      FieldName = 'Cellulare'
+      Origin = 'Pazienti.Cellulare'
+      Size = 15
+    end
+    object PazientiEMail: TStringField
+      FieldName = 'EMail'
+      Origin = 'Pazienti.EMail'
+      Size = 150
+    end
+    object PazientiConsensoPrivacy: TBooleanField
+      FieldName = 'ConsensoPrivacy'
+      Origin = 'Pazienti.ConsensoPrivacy'
+    end
+    object PazientiNominativoFatt: TStringField
+      FieldName = 'NominativoFatt'
+      Origin = 'Pazienti.NominativoFatt'
+      Size = 255
+    end
+    object PazientiIndirizzoFatt: TStringField
+      FieldName = 'IndirizzoFatt'
+      Origin = 'Pazienti.IndirizzoFatt'
+      Size = 150
+    end
+    object PazientiComuneFatt: TStringField
+      FieldName = 'ComuneFatt'
+      Origin = 'Pazienti.ComuneFatt'
+      Size = 100
+    end
+    object PazientiCapfatt: TStringField
+      FieldName = 'Capfatt'
+      Origin = 'Pazienti.Capfatt'
+      Size = 5
+    end
+    object PazientiProvFatt: TStringField
+      FieldName = 'ProvFatt'
+      Origin = 'Pazienti.ProvFatt'
+      Size = 3
+    end
+    object PazientiPIva: TStringField
+      FieldName = 'PIva'
+      Origin = 'Pazienti.PIva'
+      Size = 11
+    end
+    object PazientiCodFiscFatt: TStringField
+      FieldName = 'CodFiscFatt'
+      Origin = 'Pazienti.CodFiscFatt'
+      Size = 16
+    end
+    object PazientiCalcNominativo: TStringField
+      FieldKind = fkCalculated
+      FieldName = 'CalcNominativo'
+      Size = 255
+      Calculated = True
+    end
+    object PazientiAnnotazioni: TMemoField
+      FieldName = 'Annotazioni'
+      Origin = 'Pazienti.Annotazioni'
+      BlobType = ftMemo
+    end
+  end
+  object DSPazienti: TDataSource
+    DataSet = Pazienti
+    Left = 368
+    Top = 176
+  end
+end
